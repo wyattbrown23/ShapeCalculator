@@ -37,8 +37,11 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Value1 = new System.Windows.Forms.Label();
             this.Value2 = new System.Windows.Forms.Label();
+            this.DisplayData = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.Input1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Input2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Input1
@@ -66,7 +69,7 @@
             // 
             // AreaValue
             // 
-            this.AreaValue.Location = new System.Drawing.Point(334, 319);
+            this.AreaValue.Location = new System.Drawing.Point(344, 222);
             this.AreaValue.Name = "AreaValue";
             this.AreaValue.Size = new System.Drawing.Size(137, 27);
             this.AreaValue.TabIndex = 9;
@@ -74,7 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(384, 296);
+            this.label2.Location = new System.Drawing.Point(391, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 20);
             this.label2.TabIndex = 10;
@@ -82,7 +85,7 @@
             // 
             // CalculateAreaButton
             // 
-            this.CalculateAreaButton.Location = new System.Drawing.Point(361, 199);
+            this.CalculateAreaButton.Location = new System.Drawing.Point(660, 104);
             this.CalculateAreaButton.Name = "CalculateAreaButton";
             this.CalculateAreaButton.Size = new System.Drawing.Size(84, 35);
             this.CalculateAreaButton.TabIndex = 11;
@@ -118,11 +121,33 @@
             this.Value2.TabIndex = 14;
             this.Value2.Text = "Value2";
             // 
+            // DisplayData
+            // 
+            this.DisplayData.Location = new System.Drawing.Point(612, 381);
+            this.DisplayData.Name = "DisplayData";
+            this.DisplayData.Size = new System.Drawing.Size(94, 29);
+            this.DisplayData.TabIndex = 15;
+            this.DisplayData.Text = "Display ";
+            this.DisplayData.UseVisualStyleBackColor = true;
+            this.DisplayData.Click += new System.EventHandler(this.DisplayData_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(229, 271);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(377, 139);
+            this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.Text = "dataGridView1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DisplayData);
             this.Controls.Add(this.Value2);
             this.Controls.Add(this.Value1);
             this.Controls.Add(this.comboBox1);
@@ -136,6 +161,7 @@
             this.Text = "Select Shape";
             ((System.ComponentModel.ISupportInitialize)(this.Input1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Input2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,6 +178,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label Value1;
         private System.Windows.Forms.Label Value2;
+        private System.Windows.Forms.Button DisplayData;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
