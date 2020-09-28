@@ -25,6 +25,7 @@ namespace ShapeCalculator.winforms
             if(comboBox1.Text == "Triangle")
             {
                 AreaValue.Text = shapeCalc.triangleArea(Convert.ToDouble(Input1.Value),Convert.ToDouble(Input2.Value)).ToString();
+
             }
             if (comboBox1.Text == "Square")
             {
