@@ -125,9 +125,9 @@
             // 
             this.DisplayData.Location = new System.Drawing.Point(612, 381);
             this.DisplayData.Name = "DisplayData";
-            this.DisplayData.Size = new System.Drawing.Size(94, 29);
+            this.DisplayData.Size = new System.Drawing.Size(144, 29);
             this.DisplayData.TabIndex = 15;
-            this.DisplayData.Text = "Display ";
+            this.DisplayData.Text = "View/Refresh";
             this.DisplayData.UseVisualStyleBackColor = true;
             this.DisplayData.Click += new System.EventHandler(this.DisplayData_Click);
             // 
